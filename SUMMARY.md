@@ -2,7 +2,7 @@
 
 # Summary
 
-* [**Home**](README.md)
+* [**Sonarqube & Jenkins Training**](README.md)
 * [**Installations**](installations.md)
 ---
 * **Tutorials**
@@ -18,6 +18,6 @@
 	- [**Module 10**. Selenium Platform](tutorial/module_10.md)
 ---
 * **Labs**
-	- [**Lab 1**. ](labs/lab_1.md)
-	- [**Lab 2**. ](labs/lab_2.md)
+	- [**Lab 1**](labs/lab_1.md)
+	- [**Lab 2**](labs/lab_2.md)
 

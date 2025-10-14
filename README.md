@@ -1,6 +1,3 @@
----
-title: Sonarqube & Jenkins Training
----
 
 # Sonarqube & Jenkins Training
 
