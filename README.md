@@ -1,5 +1,5 @@
 
-# Curso Sonarqube & Jenkins
+# Sonarqube & Jenkins Training
 
 
 ### 📄 Licencia
