@@ -8,7 +8,18 @@
 
 #### Repository Structure
 
-
+```
+sonar-jenkins-training/                   
+├── labs/                      # laboratories
+│   ├── lab_1.md                  
+│   ├── lab_2.md                  
+│   ├── ...                  
+├── tutorial/                  
+│   ├── Module_1               # markdown, samples and quiz
+│   ├── Module_2               
+│   ├── ...
+└── README.md                 
+```
 
 
 ##### 📄 License
