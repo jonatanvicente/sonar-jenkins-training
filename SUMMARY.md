@@ -16,4 +16,8 @@
 	- [**Module 8**. Testing Essentials](tutorial/module_8.md)
 	- [**Module 9**. Katalon Platform](tutorial/module_9.md)
 	- [**Module 10**. Selenium Platform](tutorial/module_10.md)
+---
+* **Labs**
+	- [**Lab 1**. ](labs/lab_1.md)
+	- [**Lab 2**. ](labs/lab_2.md)
 
