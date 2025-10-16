@@ -4,6 +4,7 @@
 
 #### Onboarding
 
+* This tutorial is available online at https://jonatan-vicente.gitbook.io/sonarqube-and-jenkins-training
 * Please, be sure of follow all [Installation Instructions](installations.md) you need (are easy). 
 
 #### Repository Structure
