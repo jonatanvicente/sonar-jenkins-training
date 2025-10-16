@@ -1,7 +1,5 @@
 
 
-#### Installations
-
 Please make sure the following tools are installed on your machine:
 
 * **Docker 28.5+**.

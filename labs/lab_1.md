@@ -1,3 +1,2 @@
 
-## Laboratory 1
 
