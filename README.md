@@ -16,7 +16,7 @@ sonar-jenkins-training/
 │   ├── lab_2.md                  
 │   ├── ...                  
 ├── tutorial/                  
-│   ├── Module_1               # markdown, samples and quiz
+│   ├── Module_1               # key points of the lessons
 │   ├── Module_2               
 │   ├── ...
 └── README.md                 
