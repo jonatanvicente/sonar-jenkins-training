@@ -17,7 +17,7 @@ services:
       - sonarqube_logs:/opt/sonarqube/logs
       - sonarqube_temp:/opt/sonarqube/temp
     ports:
-      - '9000:9000'
+      - '9000:9090'   # external port:internal port
       - '8600:8600/tcp'
       - '8600:8600/udp'
     restart: unless-stopped
