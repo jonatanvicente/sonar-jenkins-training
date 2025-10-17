@@ -1,13 +1,17 @@
 
 
-? ¿Cuál es el tipo de dato que representa números enteros en Java?
-- [ ] float
-- [x] int
-- [ ] double
-- [ ] char
+**1.- What is the main config file in SonarQube?**
 
-? ¿Qué palabra clave se usa para heredar una clase en Java?
-- [ ] implements
-- [x] extends
-- [ ] inherits
-- [ ] super
+**2.- Which database is recommended for a self-hosted Sonarqube installation?**
+
+- [ ] MongoDB
+- [ ] SQLServer
+- [ ] PostgreSQL
+- [ ] MySQL
+
+**3.- Which component do you need to perform static code analysis?**
+
+- [ ] A plugin to your IDE
+- [ ] It's not possible at all
+- [ ] Add a plugin into pom.xml
+- [ ] Use Gradle to perform it 
