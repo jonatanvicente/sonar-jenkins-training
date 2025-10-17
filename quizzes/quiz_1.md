@@ -4,7 +4,7 @@
 
 **2.- Which database is recommended for a self-hosted Sonarqube installation?**
 
-- [ ] MongoDB
+- [] MongoDB
 - [ ] SQLServer
 - [ ] PostgreSQL
 - [ ] MySQL
