@@ -7,18 +7,30 @@
 * This tutorial is available online at https://jonatan-vicente.gitbook.io/sonarqube-and-jenkins-training
 * Please, be sure of follow all [Installation Instructions](installations.md) you need (are easy). 
 
+#### Prerrequisites
+
+It assumes you have knowledge about:
+- Docker (basics)
+- Java projects and structure
+- Operating Systems (Linux based preferably) and working with the command line
+
+
 #### Repository Structure
 
 ```
 sonar-jenkins-training/                   
+├── reference-guide/                  
+│   ├── module_1               
+│   ├── module_2               
+│   ├── ...
 ├── labs/                      # laboratories
 │   ├── lab_1.md                  
 │   ├── lab_2.md                  
 │   ├── ...                  
-├── tutorial/                  
-│   ├── Module_1               # key points of the lessons
-│   ├── Module_2               
-│   ├── ...
+├── quizzes/
+│   ├── quiz_1.md				   
+│   ├── quiz_2.md	
+│   ├── ...	
 └── README.md                 
 ```
 

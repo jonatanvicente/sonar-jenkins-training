@@ -22,10 +22,26 @@ services:
       - '8600:8600/udp'
     restart: unless-stopped
 
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    command: -H unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    ports:
+      - '9001:9000'
+      - '9444:9443'
+    restart: unless-stopped
+    networks:
+      sonarqube-dev:
+        ipv4_address: 152.18.0.3
+
 volumes:
   sonarqube_data:
   sonarqube_logs:
   sonarqube_temp:
+  portainer_data:
 
 networks:
     sonarqube-dev:
