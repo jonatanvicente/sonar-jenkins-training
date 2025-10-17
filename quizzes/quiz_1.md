@@ -6,12 +6,13 @@
 
 - [ _ ] MongoDB
 - [ _ ] SQLServer
-- [  ] PostgreSQL
-- [  ] MySQL
+- [ _ ] PostgreSQL
+- [ _ ] MySQL
 
 **3.- Which component do you need to perform static code analysis?**
 
-- [ ] A plugin to your IDE
-- [ ] It's not possible at all
-- [ ] Add a plugin into pom.xml
-- [ ] Use Gradle to perform it 
+- [ _ ] A plugin to your IDE
+- [ _ ] It's not possible at all
+- [ _ ] Add a plugin into pom.xml
+- [ _ ] Use Gradle to perform it 
+
