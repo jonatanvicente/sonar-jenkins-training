@@ -4,10 +4,10 @@
 
 **2.- Which database is recommended for a self-hosted Sonarqube installation?**
 
-- [] MongoDB
-- [ ] SQLServer
-- [ ] PostgreSQL
-- [ ] MySQL
+- [ _ ] MongoDB
+- [ _ ] SQLServer
+- [   ] PostgreSQL
+- [   ] MySQL
 
 **3.- Which component do you need to perform static code analysis?**
 
