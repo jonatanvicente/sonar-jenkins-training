@@ -28,7 +28,7 @@ docker compose -f docker/docker-compose.yml up --remove-orphans sonarqube -d
 docker stop [containerId] && docker rm [containerId]
 ```
 
-**Question to resolve:**
+**Question:**
 - Which Java Version is Sonarqube using?
 
 
@@ -38,5 +38,3 @@ docker stop [containerId] && docker rm [containerId]
 ```
 docker compose -f docker/docker-compose.yml up --remove-orphans portainer -d
 ```
-
-### Utilities
