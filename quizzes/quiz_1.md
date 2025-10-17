@@ -6,8 +6,8 @@
 
 - [ _ ] MongoDB
 - [ _ ] SQLServer
-- [   ] PostgreSQL
-- [   ] MySQL
+- [  ] PostgreSQL
+- [  ] MySQL
 
 **3.- Which component do you need to perform static code analysis?**
 
