@@ -35,6 +35,14 @@ sonar-jenkins-training/
 ```
 
 
+#### Sequence of the course
+
+1.- Follow the slides in the course
+2.- Use the references in the Reference Guide if needed
+3.- Complete the lab for each section
+4.- Test your knowledge with the quiz for each section 
+
+
 #### 📄 License
 
 * Este contenido está disponible públicamente para su consulta y aprendizaje, pero **no puede ser reutilizado, modificado ni distribuido con fines comerciales** sin autorización expresa del autor.

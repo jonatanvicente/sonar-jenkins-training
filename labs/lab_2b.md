@@ -2,6 +2,6 @@
 
 ## Rules
 
-- At https://next.sonarqube.com/sonarqube/projects, locate **Rules** tab.
-- Select **Java**.
-- Into tab **Security Hotspots**, localize Issue **Hard-coded secrets are security-sensitive**. How can we fix it using AWS?
+- Go to the [Sonarqube Next](https://next.sonarqube.com/sonarqube/projects), site and open the **Rules** tab.
+- Select **Java** as the language.
+- In the **Security Hotspots** tab, find the Issue **Hard-coded secrets are security-sensitive**. How can we fix it using AWS?
