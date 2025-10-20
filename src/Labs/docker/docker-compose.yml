@@ -43,7 +43,7 @@ services:
     volumes:
       - ./jenkins/conf:/var/jenkins_home
     ports:
-      - '8080:8080'
+      - '8080:8081'
       - '50000:50000'
     restart: on-failure
     networks:

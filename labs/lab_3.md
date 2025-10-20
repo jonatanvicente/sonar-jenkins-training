@@ -18,3 +18,9 @@ docker run -p 8080:8080 -p 50000:50000 --restart=on-failure jenkins/jenkins:lts-
 
 ## Reviewing the config
 
+- Start Jenkins using Docker Compose
+```
+docker compose -f docker/docker-compose.yml up --remove-orphans jenkins -d
+```
+- You can see all the Jenkins Container config mapped to the docker/jenkins/conf directory.
+	- **Warning**: This directory contains a .gitignore file that prevents uploading its contents except config.xml
