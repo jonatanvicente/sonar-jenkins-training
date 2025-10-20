@@ -23,7 +23,7 @@
 	- [**Lab 2a**. Sonarqube](labs/lab_2a.md)
 	- [**Lab 2b**. Sonarqube](labs/lab_2b.md)
 	- [**Quiz 2**](quizzes/quiz_2.md)
-	- [**Lab 3**. Jenkins Essentials]
+	- [**Lab 3**. Jenkins Essentials](labs/lab_3.md)
 	- [**Quiz 3**](quizzes/quiz_3.md)
 	- [**Lab 4**]
 	- [**Quiz 4**](quizzes/quiz_4.md)
