@@ -12,7 +12,7 @@ Locate the **Kotlin project** — we will be working with it.
 This project is an open-source and globally recognized example.
 
 
-##### Project Information
+### Project Information
 
 - Navigate to the **Project Information** tab and download the **Regulatory Report** from the master branch
 **Questions:** 
@@ -23,11 +23,11 @@ This project is an open-source and globally recognized example.
 		b) **Reliability**?
 		c) **Maintainability**?
 
-##### Overview Tab
+### Overview Tab
 **Questions:** 
 - Why are there differences between **New Code** and **Overall Code**?
 
-##### Issues Tab
+### Issues Tab
 **Questions:** 
 - What does the **Issues** section refer to?
 - What does the **Severity** field mean?
@@ -42,25 +42,25 @@ How does SonarQube help in resolving it?
 >        👉 In this case, the warning is a false positive.
 
 
-##### Security Hotspots Tab
+### Security Hotspots Tab
 - Explore the available options (To **Review**, **Acknowledged**, **Fixed**, or **Safe**) until you find a security-related issue.
 - Review the **What’s the risk?** section and explain how the issue was resolved.
 
-##### Dependency Risks Tab
+### Dependency Risks Tab
 - Clear all filters
 **Questions:** 
 - Select **Risk Type / Prohibited Licensed**. How many issues fall under this criterion, and why?
 
-##### Inventory Tab
+### Inventory Tab
 **Questions:** 
 - Browse through the project directory. Which version of the **SonarQube plugin** is being used, and where can you find it?
 
-##### Security Reports Tab
+### Security Reports Tab
 **Questions:** 
 - From the **Security Reports Overview**, download the **Security Report**.
 - What is the **security rating**, and what does it imply?
 
-##### Measures Tab
+### Measures Tab
 **Questions:** 
 - From the **Project Overview** section, indicate the Coverage percentage and the Technical Debt. What do they represent?
 - Under **Maintainability**, specify the effort required to achieve rating A.
