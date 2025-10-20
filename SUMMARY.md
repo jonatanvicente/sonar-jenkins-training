@@ -19,23 +19,23 @@
 ---
 * **Labs and Quizzes**
 	- [**Lab 1**. Sonarqube Essentials](labs/lab_1.md)
-	- [**Quiz 1**. Sonarqube Essentials](quizzes/quiz_1.md)
+	- [**Quiz 1**](quizzes/quiz_1.md)
 	- [**Lab 2a**. Sonarqube](labs/lab_2a.md)
 	- [**Lab 2b**. Sonarqube](labs/lab_2b.md)
-	- [**Quiz 2**. Sonarqube](quizzes/quiz_2.md)
-	- [**Lab 3**]
-	- [**Quiz 3**. Sonarqube Essentials](quizzes/quiz_3.md)
+	- [**Quiz 2**](quizzes/quiz_2.md)
+	- [**Lab 3**. Jenkins Essentials]
+	- [**Quiz 3**](quizzes/quiz_3.md)
 	- [**Lab 4**]
-	- [**Quiz 4**. Sonarqube Essentials](quizzes/quiz_4.md)
+	- [**Quiz 4**](quizzes/quiz_4.md)
 	- [**Lab 5**]
-	- [**Quiz 5**. Sonarqube Essentials](quizzes/quiz_5.md)
+	- [**Quiz 5**](quizzes/quiz_5.md)
 	- [**Lab 6**]
-	- [**Quiz 6**. Sonarqube Essentials](quizzes/quiz_6.md)
+	- [**Quiz 6**](quizzes/quiz_6.md)
 	- [**Lab 7**]
-	- [**Quiz 7**. Sonarqube Essentials](quizzes/quiz_7.md)
+	- [**Quiz 7**](quizzes/quiz_7.md)
 	- [**Lab 8**]
-	- [**Quiz 8**. Sonarqube Essentials](quizzes/quiz_8.md)
+	- [**Quiz 8**](quizzes/quiz_8.md)
 	- [**Lab 9**]
-	- [**Quiz 9**. Sonarqube Essentials](quizzes/quiz_9.md)
+	- [**Quiz 9**](quizzes/quiz_9.md)
 	- [**Lab 10**]
-	- [**Quiz 10**. Sonarqube Essentials](quizzes/quiz_10.md)
+	- [**Quiz 10**](quizzes/quiz_10.md)

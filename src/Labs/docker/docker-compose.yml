@@ -37,6 +37,20 @@ services:
       sonarqube-dev:
         ipv4_address: 152.18.0.3
 
+  jenkins:
+    image: jenkins/jenkins:lts-jdk21
+    container_name: jenkins
+    volumes:
+      - ./jenkins/conf:/var/jenkins_home
+    ports:
+      - '8080:8080'
+      - '50000:50000'
+    restart: on-failure
+    networks:
+      sonarqube-dev:
+        ipv4_address: 152.18.0.4
+
+
 volumes:
   sonarqube_data:
   sonarqube_logs:
