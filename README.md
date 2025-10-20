@@ -2,9 +2,6 @@
 # <img src="images/jenkins_logo.png" alt="Jenkins Logo" width="50"/>   <img src="images/sonarqube.svg" alt="Sonarqube Logo" width="200"/> 
 
 
-# Sonarqube & Jenkins Training
-
-
 #### Onboarding
 
 * This tutorial is available online at https://jonatan-vicente.gitbook.io/sonarqube-and-jenkins-training
