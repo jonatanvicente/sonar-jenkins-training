@@ -1,6 +1,6 @@
 
 
-**1.- What is the main config file in SonarQube?**
+**1.- What does it mean ?**
 
 **2.- Which database is recommended for a self-hosted Sonarqube installation?**
 

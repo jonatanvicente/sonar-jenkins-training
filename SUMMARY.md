@@ -18,10 +18,10 @@
 	- [**Module 10**. Selenium Platform](reference-guide/module_10.md)
 ---
 * **Labs and Quizzes**
-	- [**Lab 1**](labs/lab_1.md)
+	- [**Lab 1**. Sonarqube Essentials](labs/lab_1.md)
 	- [**Quiz 1**. Sonarqube Essentials](quizzes/quiz_1.md)
-	- [**Lab 2a**](labs/lab_2a.md)
-	- [**Lab 2b**](labs/lab_2b.md)
+	- [**Lab 2a**. Sonarqube](labs/lab_2a.md)
+	- [**Lab 2b**. Sonarqube](labs/lab_2b.md)
 	- [**Quiz 2**. Sonarqube](quizzes/quiz_2.md)
 	- [**Lab 3**]
 	- [**Quiz 3**. Sonarqube Essentials](quizzes/quiz_3.md)
