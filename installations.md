@@ -35,4 +35,4 @@ docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000
 ```
 
 * Reach out localhost:9000 on your navigator and set the new admin password.
-* However, you can make the installation using database follow the instructions at [Sonar Docs](https://docs.sonarsource.com/sonarqube-community-build/server-installation/installing-the-database/#database-requirements)
+* However, you can make the installation using database or other elements following the instructions at [Sonar Docs](https://docs.sonarsource.com/sonarqube-community-build/server-installation/installing-the-database/#database-requirements)

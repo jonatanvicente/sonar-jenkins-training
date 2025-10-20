@@ -29,5 +29,6 @@
 ---
 * **Labs**
 	- [**Lab 1**](labs/lab_1.md)
-	- [**Lab 2**](labs/lab_2.md)
+	- [**Lab 2a**](labs/lab_2a.md)
+	- [**Lab 2b**](labs/lab_2b.md)
 
