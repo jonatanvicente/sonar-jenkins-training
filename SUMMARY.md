@@ -9,7 +9,7 @@
 	- [**Module 1**. Sonarqube Essentials](reference-guide/module_1.md)
 	- [**Quiz 1**. Sonarqube Essentials](quizzes/quiz_1.md)
 	- [**Module 2**. Sonarqube](reference-guide/module_2.md)
-	- [**Quiz 2**. Sonarqube Essentials](quizzes/quiz_2.md)
+	- [**Quiz 2**. Sonarqube](quizzes/quiz_2.md)
 	- [**Module 3**. Jenkins Essentials](reference-guide/module_3.md)
 	- [**Quiz 3**. Sonarqube Essentials](quizzes/quiz_3.md)
 	- [**Module 4**. Jenkins Integrations](reference-guide/module_4.md)
