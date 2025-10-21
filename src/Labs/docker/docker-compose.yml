@@ -40,6 +40,8 @@ services:
   jenkins:
     image: jenkins/jenkins:lts-jdk21
     container_name: jenkins
+    environment:
+      - JENKINS_JAVA_OPTIONS=-Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true
     volumes:
       - ./jenkins/conf:/var/jenkins_home
       - ./../../../../sonar-jenkins-training:/opt/sonar-jenkins-training

@@ -1,26 +1,20 @@
 
 
-## Test Jenkins Platform
+## Adding git config to Jenkins
 
-- Install Jenkins using Docker Official Image (jenkins/jenkins:lts-jdk21)
+We'll work with a local installation of git. Execute next steps:
+
+- Verify git plugin is installed in Jenkins. Check Manage Jenkins > Plugins > Installed (or Available) Plugins. Type 'git plugin'
+- Recommended: configure git path. Verify options at Manage Jenkins > Git Installations > Path to git executable. This option must be contain the command or the full path to git executable located on your machine.
+- Verify git is installed inside the container. To go into:
+
 ```
-docker pull jenkins/jenkins:lts-jdk21 
+docker container ls
+docker exec -it [containerId] bash
+git -v # you must see git version
 ```
 
-- Start Jenkins image using
-```
-docker run -p 8080:8080 -p 50000:50000 --restart=on-failure jenkins/jenkins:lts-jdk21
-```
-- Reach out localhost:8080
-- Use the admin login (that it's shown in the console during the installation) and set a new password. Don't forget to use the new user you created for future logins.
-- Install the most used plugins
 
 
-## Reviewing the config
 
-- Start Jenkins using Docker Compose
-```
-docker compose -f docker/docker-compose.yml up --remove-orphans jenkins -d
-```
-- You can see all the Jenkins Container config mapped to the docker/jenkins/conf directory.
-	- **Warning**: This directory contains a .gitignore file that prevents uploading its contents except config.xml
+docker stop [container Id]
