@@ -25,7 +25,7 @@
 	- [**Quiz 2**](quizzes/quiz_2.md)
 	- [**Lab 3**. Jenkins Essentials](labs/lab_3.md)
 	- [**Quiz 3**](quizzes/quiz_3.md)
-	- [**Lab 4**]
+	- [**Lab 4**. Jenkins Integrations](labs/lab_4.md)
 	- [**Quiz 4**](quizzes/quiz_4.md)
 	- [**Lab 5**]
 	- [**Quiz 5**](quizzes/quiz_5.md)
