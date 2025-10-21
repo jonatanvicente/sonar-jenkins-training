@@ -41,4 +41,4 @@ docker stop [containerId]
 ```
 docker rm [containerId]
 ```
-- A **Docker CheatSheet** is available in the project. [here](src/Labs/docker/docs/docker_cheatsheet.pdf).
+- A **Docker CheatSheet** is available in the project. You can also download it [here](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
