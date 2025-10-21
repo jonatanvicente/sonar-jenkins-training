@@ -18,7 +18,7 @@ docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000
 ## Modifying Sonarqube config
 
 - Modify the port at sonar.properties and set 9090 port (located at docker/sonar/conf/sonar.properties)
-- Starts Sonarqube using Docker Compose
+- Start Sonarqube using Docker Compose
 ```
 docker compose -f docker/docker-compose.yml up --remove-orphans sonarqube -d
 ```
