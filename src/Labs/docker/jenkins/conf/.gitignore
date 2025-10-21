@@ -1,4 +1,4 @@
 *
 !config.xml
 !jenkins.model.JenkinsLocationConfiguration.xml
-!init.groovy.d
+!init.groovy.d/allow-local-checkout.groovy
