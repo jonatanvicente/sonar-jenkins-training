@@ -51,6 +51,15 @@ services:
       sonarqube-dev:
         ipv4_address: 152.18.0.4
 
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: mailhog
+    ports:
+      - '1025:1025' #SMTP
+      - '8025:8025' #Web UI
+    networks:
+      sonarqube-dev:
+        ipv4_address: 152.18.0.5
 
 volumes:
   sonarqube_data:

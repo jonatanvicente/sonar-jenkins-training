@@ -34,3 +34,16 @@ git -v # you should see git version
 
 
 
+**Adding e-mail notifications config**
+
+1. Start the SMTP server (Mailhog)
+```
+docker compose -f docker/docker-compose.yml up --remove-orphans mailhog -d
+```
+2. Reach out localhost:1025 as the email server (no credentials are needed)
+3. Go to Manage Jenkins > Configure System > Git plugin and set the user.name and user.email configurations
+4. In Manage Jenkins > Configure System > Extended E-mail notification > set SMTP Server as **mailhog** and SMTP Port as **1025**
+5. In Manage Jenkins > Configure System > E-mail notification > set SMTP Server as **mailhog** and SMTP Port as **1025**
+6. Check 'Test configuration by sending test e-mail' (checkbox on), and enter any fake email address under 'Test e-mail recipient' (MailHog will accept and capture messages for any recipient).
+7. Verify that the test e-mail appears in MailHog at localhost:8025.
+
