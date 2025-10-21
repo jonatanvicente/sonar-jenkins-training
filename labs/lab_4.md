@@ -20,17 +20,17 @@ git -v # you should see git version
 
 **Your first Jenkins Project**
 
-1.- Go to **New Item** > Enter an **Item Name** > Select **'Freestyle Project'**
-2.- In your new project, go to **Configure** and set:
+1. Go to **New Item** > Enter an **Item Name** > Select **'Freestyle Project'**
+2. In your new project, go to **Configure** and set:
 	- **Git**: Repository URL: /opt/sonar-jenkins-training/.git
 	- **Branch Specifier:** \*/main
-3.- On the main project page, click the **Play button** to schedule a build **immediately**.
-4.- You can **view all the builds executions**
-5.- Navigate to one of the successful executions and **check the Console Output**.
+3. On the main project page, click the **Play button** to schedule a build **immediately**.
+4. You can **view all the builds executions**
+5. Navigate to one of the successful executions and **check the Console Output**.
 
 **Questions:** 
-1.- What type of information is shown in the Console Output, and how is it useful?	
-2.- Browse to the Status menu in the build. What type of information is contained there, and how can it be used in connection with Git information?
+1. What type of information is shown in the Console Output, and how is it useful?	
+2. Browse to the Status menu in the build. What type of information is contained there, and how can it be used in connection with Git information?
 
 
 
