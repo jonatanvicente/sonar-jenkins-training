@@ -59,9 +59,26 @@ docker compose -f docker/docker-compose.yml up --remove-orphans mailhog -d
 **Configuring Project Triggers**
 
 Jenkins can be configured to execute various tasks pre/after built. So far, we've configured Jenkins to send emails when a build fails.
-Now we'll configure our Project to receive those notifications:
-1. Go to Your Project > Configure > Triggers
-2. Add Post-Built-Action > Email Notification. Enter recipients (fake address) and enable 'Send e-mail for every unstable build'
+Now we'll **configure our Project to receive those notifications**:
+1. Go to Your Project > Configure > **Triggers**
+2. **Add Post-Built-Action** > Email Notification. Enter **recipients** (fake address) and **enable 'Send e-mail for every unstable build'**
 
 
+**Configuring Gradle**
+
+To **prevent Gradle from using the cache** and to ensure the project is rebuilt each time you change the code, follow these steps:
+- **Make sure Gradle is properly configured in Jenkins**. Go to Project → Build Steps → Use Gradle Wrapper, enable Make gradlew executable, and set Wrapper location to ${WORKSPACE}.
+- In the **Tasks** field, add the following parameters:
+```
+ clean test --no-daemon --no-build-cache --rerun-tasks
+```
+
+
+**Causing Errors**
+
+To test the installation, follow these steps:
+
+1. Go to tmp copy of project. 
+2. Introduce an error into one of the tests.
+3. Run the Jenkins job to view the error trace.
 
