@@ -13,8 +13,10 @@
 #### Prerrequisites
 
 It assumes you have knowledge about:
-- Docker (basics)
 - Java projects and structure
+- Gradle (or Maven)
+- Git
+- Docker (basics)
 - Operating Systems (Linux based preferably) and working with the command line
 
 

@@ -20,6 +20,15 @@ git -v # you should see git version
 
 **Your first Jenkins Project**
 
+First, we are going to prepare the repository by making a copy for Jenkins:
+- Copy Labs directory into a temporary location.
+- Go to tmp/Labs
+- Initialize git repository (git init). This creates a new git repository.
+- **Map the tmp directory to Docker:** The tmp directory should be mapped in docker-compose.yml to /opt/sonar-jenkins-training (the Jenkins directory)
+
+
+Then follow next steps:
+
 1. Go to **New Item** > Enter an **Item Name** > Select **'Freestyle Project'**
 2. In your new project, go to **Configure** and set:
 	- **Git**: Repository URL: /opt/sonar-jenkins-training/.git
@@ -34,26 +43,25 @@ git -v # you should see git version
 
 
 
-**Adding e-mail notifications config**
+**Adding e-mail notifications config to Jenkins**
 
 1. Start the SMTP server (Mailhog)
 ```
 docker compose -f docker/docker-compose.yml up --remove-orphans mailhog -d
 ```
 2. Reach out localhost:1025 as the email server (no credentials are needed)
-3. Go to Manage Jenkins > Configure System > Git plugin and set the user.name and user.email configurations
+3. Go to **Manage Jenkins > Configure System > Git plugin** and set the user.name and user.email configurations
 4. In Manage Jenkins > Configure System > Extended E-mail notification > set SMTP Server as **mailhog** and SMTP Port as **1025**
 5. In Manage Jenkins > Configure System > E-mail notification > set SMTP Server as **mailhog** and SMTP Port as **1025**
 6. Check 'Test configuration by sending test e-mail' (checkbox on), and enter any fake email address under 'Test e-mail recipient' (MailHog will accept and capture messages for any recipient).
 7. Verify that the test e-mail appears in MailHog at localhost:8025.
 
-**Configuring triggers**
+**Configuring Project Triggers**
 
-We can to configure Jenkins to execute many tasks pre/after built. Now, we've configured Jenkins to send emails when build fails.
-We are going to configure our Project to receive them:
+Jenkins can be configured to execute various tasks pre/after built. So far, we've configured Jenkins to send emails when a build fails.
+Now we'll configure our Project to receive those notifications:
 1. Go to Your Project > Configure > Triggers
-2. Add Post-Built-Action > Email Notification. Add recipients (fake address) and check on 'Send e-mail for every unstable build'
-3. 
+2. Add Post-Built-Action > Email Notification. Enter recipients (fake address) and enable 'Send e-mail for every unstable build'
 
 
 
