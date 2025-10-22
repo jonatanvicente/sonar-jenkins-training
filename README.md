@@ -56,3 +56,4 @@ Esto significa que:
 - ❌ No puedes modificarlo, adaptarlo ni crear obras derivadas.
 - ❌ No puedes utilizarlo con fines comerciales (como cursos, bootcamps, o formación interna).
 
+
