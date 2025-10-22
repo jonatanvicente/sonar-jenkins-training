@@ -42,7 +42,7 @@ services:
     container_name: jenkins
     volumes:
       - ./jenkins/conf:/var/jenkins_home
-      - ./../../../../sonar-jenkins-training:/opt/sonar-jenkins-training
+      - ~/tmp/Labs:/opt/sonar-jenkins-training
     ports:
       - '8080:8080'
       - '50000:50000'
