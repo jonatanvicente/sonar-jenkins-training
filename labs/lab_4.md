@@ -47,3 +47,13 @@ docker compose -f docker/docker-compose.yml up --remove-orphans mailhog -d
 6. Check 'Test configuration by sending test e-mail' (checkbox on), and enter any fake email address under 'Test e-mail recipient' (MailHog will accept and capture messages for any recipient).
 7. Verify that the test e-mail appears in MailHog at localhost:8025.
 
+**Configuring triggers**
+
+We can to configure Jenkins to execute many tasks pre/after built. Now, we've configured Jenkins to send emails when build fails.
+We are going to configure our Project to receive them:
+1. Go to Your Project > Configure > Triggers
+2. Add Post-Built-Action > Email Notification. Add recipients (fake address) and check on 'Send e-mail for every unstable build'
+3. 
+
+
+
