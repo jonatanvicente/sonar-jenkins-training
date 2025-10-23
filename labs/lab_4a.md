@@ -67,8 +67,9 @@ Now we'll **configure our Project to receive those notifications**:
 **Configuring Gradle**
 
 To **prevent Gradle from using the cache** and to ensure the project is rebuilt each time you change the code, follow these steps:
-- **Make sure Gradle is properly configured in Jenkins**. Go to Project → Build Steps → Use Gradle Wrapper, enable Make gradlew executable, and set Wrapper location to ${WORKSPACE}.
-- In the **Tasks** field, add the following parameters:
+- **Make sure Gradle is properly configured in Jenkins**. We are adding a new Step to our pipeline: 
+	- Go to Project → Build Steps → Use Gradle Wrapper, enable Make gradlew executable, and set Wrapper location to ${WORKSPACE}.
+	- In the **Tasks** field, add the following parameters:
 ```
  clean test --no-daemon --no-build-cache --rerun-tasks
 ```
