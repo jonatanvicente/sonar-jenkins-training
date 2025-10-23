@@ -19,7 +19,7 @@
 ---
 * **Labs and Quizzes**
 	- **Sonarqube Essentials**
-		- [**Lab 1**](labs/lab_1.md)
+		- [**Lab 1**. Sonarqube Essentials](labs/lab_1.md)
 		- [**Quiz 1**](quizzes/quiz_1.md)
 	- **Sonarqube**
 		- [**Lab 2a**. Sonarqube](labs/lab_2a.md)
@@ -29,9 +29,9 @@
 		- [**Lab 3**. Jenkins Essentials](labs/lab_3.md)
 		- [**Quiz 3**](quizzes/quiz_3.md)
 	- **Jenkins Integrations**
-	- [**Lab 4a**. Jenkins Integrations](labs/lab_4a.md)
-	- [**Lab 4b**. Jenkins Integrations](labs/lab_4b.md)
-	- [**Quiz 4**](quizzes/quiz_4.md)
+		- [**Lab 4a**. Jenkins Integrations](labs/lab_4a.md)
+		- [**Lab 4b**. Jenkins Integrations](labs/lab_4b.md)
+		- [**Quiz 4**](quizzes/quiz_4.md)
 	- [**Lab 5**]
 	- [**Quiz 5**](quizzes/quiz_5.md)
 	- [**Lab 6**]

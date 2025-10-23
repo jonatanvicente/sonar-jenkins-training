@@ -1,23 +1,23 @@
 
 
-**1.- What does Cyclomatic Complexity mean?**
+**1.- How many types of Jobs exist in Jenkins?**
 
-- [ _ ] Minimum number of test cases required for full test coverage
-- [ _ ] It's a very important measure that indicates code quality
-- [ _ ] When combining with Cognitive Complexity, it's a powerful tool to test code
-- [ _ ] All of the above
+- [ _ ] Freestyle Project
+- [ _ ] There are no jobs in Jenkins
+- [ _ ] At least six
+- [ _ ] None of the above
 
-**2.- What does Cognitive Complexity mean?**
+**2.- How should we design the different steps of our pipeline?**
 
-**3.- Where can I find the Technical Debt Report?**
+- [ _ ] By creating steps in the Jenkins pipeline and mapping them to the Gradle/Maven tasks of our project
+- [ _ ] By defining them using descriptors such as a Jenkinsfile
+- [ _ ] None of the above
+- [ _ ] 1 and 2
 
-**4.- Is it possible to customize Sonar rules?**
+**3.- Is it necessary to add Sonarqube to our Jenkins installation?**
 
-- [ _ ]. Yes, but it is innecesary
-- [ _ ]. Yes, but it is very complex
-- [ _ ]. No
-- [ _ ]. Yes, and helps improve quality in production branches
-
-**5.- Is it advantageous to use full inspection all the time in SonarQube?**
-
-**6.- Why is it important to configure notifications to receive quality failure alerts in SonarQube?**
+- No, Sonarqube is preconfigured in Jenkins
+- No, Jenkins is sufficient on its own
+- Yes, it is highly recommended
+- Yes, but Jenkins alone is still a useful resource
+- 3 and 4
