@@ -32,15 +32,7 @@
 		- [**Lab 4a**. Jenkins Integrations](labs/lab_4a.md)
 		- [**Lab 4b**. Jenkins Integrations](labs/lab_4b.md)
 		- [**Quiz 4**](quizzes/quiz_4.md)
-	- [**Lab 5**]
-	- [**Quiz 5**](quizzes/quiz_5.md)
-	- [**Lab 6**]
-	- [**Quiz 6**](quizzes/quiz_6.md)
-	- [**Lab 7**]
-	- [**Quiz 7**](quizzes/quiz_7.md)
-	- [**Lab 8**]
-	- [**Quiz 8**](quizzes/quiz_8.md)
-	- [**Lab 9**]
-	- [**Quiz 9**](quizzes/quiz_9.md)
-	- [**Lab 10**]
-	- [**Quiz 10**](quizzes/quiz_10.md)
+	- **Jenkins Tests**
+		- [**Lab 5**. Jenkins Tests](labs/lab_5.md)
+		- [**Quiz 5**](quizzes/quiz_5.md)
+
