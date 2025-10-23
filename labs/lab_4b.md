@@ -73,7 +73,7 @@ sonarqube {
 		- Wrapper location: ${WORKSPACE}
 		- Tasks: 
 ```
-		sonarqube -Dsonar.login=$SONAR_TOKEN -Dsonar.host.url=http://sonarqube:9000
+sonarqube -Dsonar.login=$SONAR_TOKEN -Dsonar.host.url=http://sonarqube:9000
 ```
 
 8. **Test your pipeline**
