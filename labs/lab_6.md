@@ -15,8 +15,8 @@ You have a small project with only a main branch. You want Jenkins to build, tes
 <details>
   <summary>Solution and Reasoning</summary>
 
-**Solution**: Pipeline Job
-**Reasoning**: Simple scenario, single branch. A Pipeline job with a Jenkinsfile covers build, test, and deploy steps.
+- **Solution**: Pipeline Job
+- **Reasoning**: Simple scenario, single branch. A Pipeline job with a Jenkinsfile covers build, test, and deploy steps.
 
 </details>
 
