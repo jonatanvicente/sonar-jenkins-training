@@ -3,8 +3,8 @@
 ## Triggers
 
 - Configure a Freestyle Jenkins Job to automatically trigger a build whenever there are changes in the Git repository:
-  1. Configure the job so that it polls the SCM for changes every 5 minutes and triggers a build only if there are changes.
-  2. Save the job and verify that it triggers a build when you push changes to the repository.
+    1. Configure the job so that it polls the SCM for changes every 5 minutes and triggers a build only if there are changes.
+    2. Save the job and verify that it triggers a build when you push changes to the repository.
 
 <details>
   <summary>Tip</summary>
