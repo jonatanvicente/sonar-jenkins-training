@@ -36,5 +36,5 @@
 		- [**Lab 5**. Jenkins Tests](labs/lab_5.md)
 		- [**Quiz 5**](quizzes/quiz_5.md)
 	- **Jenkins Jobs**
-		- [**Lab 6**. Jenkins Tests](labs/lab_6.md)
-		- [**Quiz 5**](quizzes/quiz_5.md)
+		- [**Lab 6**. Jenkins Jobs](labs/lab_6.md)
+		- [**Quiz 6**](quizzes/quiz_6.md)
