@@ -61,7 +61,7 @@ Esto significa que:
 
 #### Trainer
 
-**Jonatan Vicente() - IT & Software Architect** (profile at [LinkedIn](https://www.linkedin.com/in/jonatanvicente/) )
+**Jonatan Vicente- IT & Software Architect** (profile at [LinkedIn](https://www.linkedin.com/in/jonatanvicente/) )
 
 it@jonatanvicente.com
 
