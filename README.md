@@ -60,6 +60,6 @@ Esto significa que:
 
 #### Trainer
 
-[Jonatan Vicente](https://www.linkedin.com/in/jonatanvicente/) - IT & Software Architect ()
-
-&copy;**Jonatan Vicente  - it@jonatanvicente.com - All Rights Reserved**
+[Jonatan Vicente](https://www.linkedin.com/in/jonatanvicente/) - IT & Software Architect
+&copy;**Jonatan Vicente - All Rights Reserved**
+**it@jonatanvicente.com**
