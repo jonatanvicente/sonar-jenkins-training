@@ -58,4 +58,8 @@ Esto significa que:
 - ❌ No puedes modificarlo, adaptarlo ni crear obras derivadas.
 - ❌ No puedes utilizarlo con fines comerciales (como cursos, bootcamps, o formación interna).
 
+#### Trainer
 
+- Jonatan Vicente - IT & Software Architect (https://www.linkedin.com/in/jonatanvicente/)
+
+&copy;Jonatan Vicente  - it@jonatanvicente.com
