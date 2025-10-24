@@ -10,7 +10,7 @@
 <details>
   <summary>Solution</summary>
 
-- **d**
+- d
 
 </details>
 
@@ -19,7 +19,7 @@
 <details>
   <summary>Solution</summary>
 
-- **Cognitive Complexity is a measure of how difficult the application is to understand.**
+- Cognitive Complexity is a measure of how difficult the application is to understand
 
 </details>
 
@@ -28,21 +28,21 @@
 <details>
   <summary>Solution</summary>
 
-- **You can find the Technical Debt Report inside a project’s "Measures" or "Overview" tab in the SonarQube Web UI.**
+- You can find the Technical Debt Report inside a project’s "Measures" or "Overview" tab in the SonarQube Web UI
 
 </details>
 
 **4.- Is it possible to customize Sonar rules?**
 
-- [ _ ]. Yes, but it is innecesary
-- [ _ ]. Yes, but it is very complex
-- [ _ ]. No
-- [ _ ]. Yes, and helps improve quality in production branches
+- a. Yes, but it is innecesary
+- b. Yes, but it is very complex
+- c. No
+- d. Yes, and helps improve quality in production branches
 
 <details>
   <summary>Solution</summary>
 
-- **d**
+- d
 
 </details>
 
@@ -51,7 +51,7 @@
 <details>
   <summary>Solution</summary>
 
-- ****
+- A full inspection (analyzing all files in the project every time) ensures complete accuracy but has significant drawbacks (it's heavy). Instead, incremental analysis is efficient for daily CI runs
 
 </details>
 
@@ -60,6 +60,6 @@
 <details>
   <summary>Solution</summary>
 
-- **A full inspection (analyzing all files in the project every time) ensures complete accuracy but has significant drawbacks (it's heavy). Instead, incremental analysis is efficient for daily CI runs**
+- Notifications keep the team proactive — not reactive — in maintaining code quality.
 
 </details>

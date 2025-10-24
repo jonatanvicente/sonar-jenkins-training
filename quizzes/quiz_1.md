@@ -5,7 +5,7 @@
 <details>
   <summary>Solution</summary>
 
-- **sonar.properties**
+- sonar.properties
 
 </details>
 
@@ -19,7 +19,7 @@
 <details>
   <summary>Solution</summary>
 
-- **PostgreSQL**
+- PostgreSQL
 
 </details>
 
@@ -33,6 +33,6 @@
 <details>
   <summary>Solution</summary>
 
-- **a and c**
+- a and c
 
 </details>
