@@ -61,6 +61,9 @@ Esto significa que:
 #### Trainer
 
 **[Jonatan Vicente](https://www.linkedin.com/in/jonatanvicente/) - IT & Software Architect**
+
 it@jonatanvicente.com
+
 <hr/>
+
 &copy;**Jonatan Vicente - All Rights Reserved**. 
