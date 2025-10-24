@@ -9,20 +9,13 @@ For each scenario, decide which Jenkins job type or configuration is most approp
 #### 1. Single Project, Single Branch
 
 You have a small project with only a main branch. You want Jenkins to build, test, and deploy this project automatically whenever you push changes to main.
+
 **Question: Which Jenkins job type should you use?**
 
-
 <details>
-  <summary>Section 1: Introduction</summary>
-
-This is the hidden content for **Section 1**.
-
-You can write **Markdown** inside here, including lists:
-
-- Item 1
-- Item 2
-- Item 3
-
+  <summary>Solution and Reasoning</summary>
+**Solution**: Pipeline Job
+**Reasoning**: Simple scenario, single branch. A Pipeline job with a Jenkinsfile covers build, test, and deploy steps.
 </details>
 
 #### 2. Multiple Feature Branches with PR Validation
