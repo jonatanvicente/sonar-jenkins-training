@@ -1,0 +1,33 @@
+pipeline {
+  agent any
+  environment {
+    GRADLEW = './gradlew'
+  }
+  stages {
+    stage('Build') {
+      when { branch 'develop' }
+      steps {
+        sh "${GRADLEW} clean assemble -x test"
+      }
+    }
+    stage('Test') {
+      when { branch 'develop' }
+      steps {
+        sh "${GRADLEW} test"
+        junit '**/build/test-results/test/*.xml'
+      }
+    }
+    stage('Package') {
+      when { branch 'develop' }
+      steps {
+        sh "${GRADLEW} assemble"
+        archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
+      }
+    }
+  }
+  post {
+    always {
+      cleanWs()
+    }
+  }
+}
