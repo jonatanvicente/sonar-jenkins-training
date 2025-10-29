@@ -18,13 +18,27 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    afterSuite { desc, result ->
+        if (!desc.parent) { // root suite only
+            int total = result.testCount
+            int passed = total - result.failedTestCount - result.skippedTestCount
+            double passRate = total ? (passed / (double) total) * 100 : 100.0
+            double minPass = 80.0 // set required minimum percent here
+            println "Test results: total=${total}, passed=${passed}, passRate=${String.format('%.1f', passRate)}%"
+            if (passRate < minPass) {
+                throw new GradleException("Test pass rate ${String.format('%.1f', passRate)}% is below required ${minPass}%")
+            }
+        }
+    }
 }
+
+
 
 sonarqube {
     properties {
         property "sonar.projectKey", "sonar-jenkins-training"
         property "sonar.projectName", "sonar-jenkins-training"
         property "sonar.host.url", "http://sonarqube:9000"
-        //property "sonar.token", "squ_fe5fa50fc8f0b838e3ce2fe42bbd7e117ac556dc"
+        property "sonar.token", "squ_fe5fa50fc8f0b838e3ce2fe42bbd7e117ac556dc"
     }
 }

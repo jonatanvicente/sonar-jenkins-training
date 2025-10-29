@@ -14,11 +14,24 @@ pipeline {
       when { branch 'develop' }
       steps {
         sh "${GRADLEW} test"
-        junit '**/build/test-results/test/*.xml'
+        junit '**/build/test-results/test/*.xml' //many atts available
+      }
+    }
+    stage('SonarQube Analysis') {
+      when { branch 'develop' }
+      steps {
+        withSonarQubeEnv('Sonarqube Training') {//Match the name in Jenkins configuration
+          sh "${GRADLEW} sonar \
+                           -Dsonar.projectKey=sonar-jenkins-training_3 \
+                           -Dsonar.projectName='sonar-jenkins-training_3' \
+                           -Dsonar.host.url=http://sonarqube:9000 \
+                           -Dsonar.token=squ_fe5fa50fc8f0b838e3ce2fe42bbd7e117ac556dc"
+        }
       }
     }
     stage('Package') {
       when { branch 'develop' }
+      //when { expression { env.BRANCH_NAME != 'main' } }
       steps {
         sh "${GRADLEW} assemble"
         archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true

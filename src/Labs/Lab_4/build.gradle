@@ -25,6 +25,6 @@ sonarqube {
         property "sonar.projectKey", "sonar-jenkins-training"
         property "sonar.projectName", "sonar-jenkins-training"
         property "sonar.host.url", "http://sonarqube:9000"
-        //property "sonar.token", "squ_fe5fa50fc8f0b838e3ce2fe42bbd7e117ac556dc"
+        property "sonar.token", "squ_fe5fa50fc8f0b838e3ce2fe42bbd7e117ac556dc"
     }
 }
