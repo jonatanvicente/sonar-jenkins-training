@@ -39,3 +39,7 @@
 		- [**Lab 6a**. Jenkins Jobs](labs/lab_6a.md)
 		- [**Lab 6b**. Jenkins Triggers](labs/lab_6b.md)
 		- [**Quiz 6**](quizzes/quiz_6.md)
+	- **Jenkins Pipeline**
+		- [**Lab 7a**. Jenkins Pipeline](labs/lab_7a.md)
+		- [**Lab 7b**. Jenkins Scenarios](labs/lab_7b.md)
+		- [**Quiz 7**](quizzes/quiz_7.md)		
