@@ -1,0 +1,16 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build & Test') { steps { sh 'mvn clean test' } }
+    stage('Code Analysis') {
+      steps {
+        withSonarQubeEnv('SonarQubeServer') {
+          sh 'mvn sonar:sonar'
+        }
+      }
+    }
+    stage('Quality Gate') {
+      steps { waitForQualityGate abortPipeline: true }
+    }
+  }
+}

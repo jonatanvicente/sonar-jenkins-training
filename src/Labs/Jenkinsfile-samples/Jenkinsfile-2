@@ -1,0 +1,13 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build & Unit Test') { steps { sh 'npm test' } }
+    stage('Static Code Analysis') {
+      steps {
+        withSonarQubeEnv('SonarQubeServer') {
+          sh 'sonar-scanner -Dsonar.pullrequest.key=$CHANGE_ID'
+        }
+      }
+    }
+  }
+}

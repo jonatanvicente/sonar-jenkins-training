@@ -1,0 +1,9 @@
+@Library('company-shared-lib') _
+pipeline {
+  agent { label 'docker' }
+  stages {
+    stage('Build') { steps { buildApp() } }
+    stage('Analyze') { steps { sonarAnalyze() } }
+    stage('Deploy') { steps { deployTo('staging') } }
+  }
+}

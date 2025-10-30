@@ -1,0 +1,12 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build & Unit Tests') { ... }
+    stage('SonarQube Analysis') { ... }
+    stage('Quality Gate') { ... }
+    stage('Deploy to Staging') {
+      when { expression { currentBuild.result == 'SUCCESS' } }
+      steps { sh './deploy.sh staging' }
+    }
+  }
+}
