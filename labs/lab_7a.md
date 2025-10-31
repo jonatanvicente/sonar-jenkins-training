@@ -1,62 +1,49 @@
 
+Follow next steps:
 
 ## Executing a Multibranch Project
 
-- Install Blue Ocean plugin into Jenkins
-- Switch to Blue Ocean View at localhost:8080/blue (you can switch again to the classic view at any moment)
-- Create New Pipeline from Git. Set the properties:
+1. Install the Blue Ocean plugin in Jenkins.
+2. Switch to the Blue Ocean View at localhost:8080/blue (you can switch back to the classic view at any time).
+3. Create New Pipeline from Git. Set the properties:
     - Repository: /opt/sonar-jenkins-training
-    - Credentials: not needed
-
-OJO CREAR NUEVAS RAMAS PARA MULTIBRANCH
+    - Credentials: not required
+4. Create a new branch (e.g. develop) in your repository. Jenkins will start executing the multibranch project automatically
 
 
 ### Blue Ocean View
-- Navigate to the Branches TAb  
-- Click on branches and see the status of stages
 
-Edicion de jenkins file
-
-Ahora en ocean > pipeline > Branches > Edit (de cada rama) podemos editar el jenkinsfile visualmente:
-  - Vemos environment
-  - Editamos cada paso, vemos atributos availbable para pcada step
-
-
-Añadimos jenkinsfile y dos ramas se testean >> mulitibranch
-  Durante ejecución del pipe, en ocean, vemos como avanza
+- Navigate to the Branches Tab  
+- Click on a branch to view the status of each stage
+- You can monitor pipeline execution and track its progress
+- You can switch back to the Classic View at any time.
+- Status view: Click on a branch to access its status and logs.
+- Branches can be filtered by name to track execution progress easily.
 
 
-  Podems ver la consola de cada ejeución en vista normal a ldcha cmd
+#### Editing the Jenkinsfile
 
-- Vision blue : vemos en cada ejecución > cada stage > trazas segmentadas por stage
+- Go to Blue Ocean > Pipeline > Branch > Edit (for each branch). You can edit the Jenkinsfile using the graphical interface:
+    - Each step displays its available attributes.
 
+- Ensure that the Jenkinsfile includes the attribute withSonarQubeEnv('Sonarqube Training') to match the Jenkins global configuration.
+- To skip a step for certain branches, you can use an expression like:
 
-Vista status
-Al clickar en una rama vemos status y podemos acceder a logs
+```
+ when { expression { !(env.BRANCH_NAME ==~ /feature\/.*/) } } // skip tests for `feature/*`
+```
 
- en blue puedes filtrar por ramas en titulo y ver ejecución de cada una
-
- también ha saltado todas excepto la última end en main
+    - **Test it by skipping any step when the develop branch is executing**
 
 ### Classic View
-- Navigate to the Classic View clicking to the button top right
-- Start the new pipeline
-- See the logs at 
-
-    - vision normal no ocean: cada branch > abajo a izda numero de builds > click > console oputput
-
-
-## Jenkinsfile
-
-OJO en jenkins file debe estar ' withSonarQubeEnv('Sonarqube Training') {//Match con Jenkins config server global sonqrugbe'
-
- when { expression { !(env.BRANCH_NAME ==~ /feature\/.*/) } } // skip tests for `feature/*`
-
-
- Hacemo solo cambio en develop evitando main package
+- Switch to the Classic View by clicking the button at the top right.
+- Start the pipeline
+- View logs by clicking on the desired branch.
+- On the left bottom, click the build number to see the console output.
 
 
 ## Sonarqube
 
- Creamos nuevo proyecto Sonarqube
- Ahora desde Ocean hacemos click solo para develop
+- Create new Project
+- Link it to the new pipeline execution (multiproject setup).
+
