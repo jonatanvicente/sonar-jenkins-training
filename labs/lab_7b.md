@@ -3,21 +3,22 @@
 ## Common WorkflowScenarios
 
 
-| Scenario                       | Jenkins Type         | Git Usage                  | SonarQube Usage       | Typical Org              |
-| ------------------------------ | -------------------- | -------------------------- | --------------------- | ------------------------ |
-| 1. Basic CI                    | Single pipeline      | Main branch                | Simple analysis       | Small team               |
-| 2. PR Validation               | Declarative pipeline | Feature branches           | PR decoration         | Mid-size team            |
-| 3. Multi-Branch                | Multibranch pipeline | Automated branch discovery | Branch analysis       | Active development teams |
-| 4. CI + CD Quality Gate        | Full pipeline        | Main & staging branches    | Blocking gate         | Mature CI/CD             |
-| 5. Microservices (Shared Libs) | Library-based        | Many repos                 | Consistent analysis   | Large enterprise         |
-| 6. Parallel Module Analysis    | Parallel pipeline    | Monorepo                   | Multiple project keys | Complex systems          |
+| **Scenario**                       | **Jenkins Type**     | **Git Usage**              | **SonarQube Usage**   | **Typical Org**          |
+| ---------------------------------- | -------------------- | -------------------------- | --------------------- | ------------------------ |
+| **1. Basic CI**                    | Single pipeline      | Main branch                | Simple analysis       | Small team               |
+| **2. PR Validation**               | Declarative pipeline | Feature branches           | PR decoration         | Mid-size team            |
+| **3. Multi-Branch**                | Multibranch pipeline | Automated branch discovery | Branch analysis       | Active development teams |
+| **4. CI + CD Quality Gate**        | Full pipeline        | Main & staging branches    | Blocking gate         | Mature CI/CD             |
+| **5. Microservices (Shared Libs)** | Library-based        | Many repos                 | Consistent analysis   | Large enterprise         |
+| **6. Parallel Module Analysis**    | Parallel pipeline    | Monorepo                   | Multiple project keys | Complex systems          |
 
 
 
 **_1. Basic CI Pipeline (Main Branch Only)_**
 
-**Purpose:** Continuous Integration on a single main branch.
-**Stack:** Jenkins + Git (any provider) + SonarQube (local or cloud).
+- **Purpose:** Continuous Integration on a single main branch.
+- **Stack:** Jenkins + Git (any provider) + SonarQube (local or cloud).
+- **See Jenkinsfile-samples/Jenkinsfile-1**
 
 **Flow**
 
@@ -37,126 +38,100 @@
 - Ensures minimum code quality before merging.
 
 
-**_2. Feature Branch / Pull Request Validation Pipeline**
+**_2. Feature Branch / Pull Request Validation Pipeline_**
 
-Purpose: Validate code quality before merging into main.
+- **Purpose**: Validate code quality before merging into main.
+- **See Jenkinsfile-samples/Jenkinsfile-2**
 
-Flow
+**Flow**
 
-Developer creates feature branch → opens Pull Request (PR).
+1. Developer creates feature branch → opens Pull Request (PR).
+2. Git provider webhook triggers Jenkins.
+3. Jenkins runs:
+  - Build + unit tests.
+  - SonarQube scan with PR decoration (comments in PR).
+  - Reports results to SonarQube and optionally GitHub/GitLab.
 
-Git provider webhook triggers Jenkins.
+**Typical use**
 
-Jenkins runs:
+- Teams using GitFlow or feature-branch models.
+- Enforce code quality before merging PRs.
+- Faster feedback for developers.
 
-Build + unit tests.
 
-SonarQube scan with PR decoration (comments in PR).
+**_3. Multi-Branch Pipeline (Automated per Branch)_**
 
-Reports results to SonarQube and optionally GitHub/GitLab.
+**Purpose**: Automatically create pipelines for each branch.
 
-Typical use
+**Flow**
 
-Teams using GitFlow or feature-branch models.
+- Jenkins multibranch pipeline scans a Git repository.
+- Each branch automatically gets a pipeline.
+- SonarQube analysis runs per branch (SonarQube Developer Edition or higher required).
 
-Enforce code quality before merging PRs.
+**Benefits**
 
-Faster feedback for developers.
+- Zero manual config per branch.
+- Isolated analysis per branch.
+- Seamless integration with Git-based workflows.
 
+**Typical use**
 
-3. Multi-Branch Pipeline (Automated per Branch)
+- Repositories with many feature branches.
+- Organizations wanting fully automated CI per branch.
 
-Purpose: Automatically create pipelines for each branch.
 
-Flow
+**_4. Pipeline with Staged Quality Gates (CI + CD)_**
 
-Jenkins multibranch pipeline scans a Git repository.
+**Purpose**: Integrate code analysis into deployment pipelines.
+- **See Jenkinsfile-samples/Jenkinsfile-4**
 
-Each branch automatically gets a pipeline.
+**Flow**
 
-SonarQube analysis runs per branch (SonarQube Developer Edition or higher required).
+1. Jenkins builds, tests, and analyzes code.
+2. If quality gate passes → package artifact.
+3. Deploy automatically to staging.
+4. Optionally run integration tests before production.
 
-Benefits
 
-Zero manual config per branch.
+**Typical use**
 
-Isolated analysis per branch.
+- Continuous Delivery setups.
+- Projects enforcing quality gates as blockers before deployment.
 
-Seamless integration with Git-based workflows.
 
-Typical use
 
-Repositories with many feature branches.
+**_5. Microservices Architecture (Shared Libraries)_**
 
-Organizations wanting fully automated CI per branch.
+**Purpose**: Standardize pipelines across multiple repositories (microservices).
+- **See Jenkinsfile-samples/Jenkinsfile-5**
 
+**Flow**
 
+- Each repo contains a minimal Jenkinsfile.
+- Shared Jenkins library defines standardized stages:
+    - build()
+    - test()
+    - sonarAnalyze()
+    - deploy()
 
-4. Pipeline with Staged Quality Gates (CI + CD)
+**Typical use**
 
-Purpose: Integrate code analysis into deployment pipelines.
+- Medium or large organizations.
+- 10+ microservices using the same CI/CD rules.
+- Governance and consistency.
 
-Flow
 
-Jenkins builds, tests, and analyzes code.
+**_6.Parallel Branch/Module Analysis_**
 
-If quality gate passes → package artifact.
+**Purpose**: Large monorepos or modular systems.
+- **See Jenkinsfile-samples/Jenkinsfile-6**
 
-Deploy automatically to staging.
+**Flow**
 
-Optionally run integration tests before production.
+- Jenkins runs multiple SonarQube analyses in parallel (per module or component).
+- Aggregates results in SonarQube dashboard.
 
-
-
-Typical use
-
-Continuous Delivery setups.
-
-Projects enforcing quality gates as blockers before deployment.
-
-
-
-5. Microservices Architecture (Shared Libraries)
-
-Purpose: Standardize pipelines across multiple repositories (microservices).
-
-Flow
-
-Each repo contains a minimal Jenkinsfile.
-
-Shared Jenkins library defines standardized stages:
-
-build()
-
-test()
-
-sonarAnalyze()
-
-deploy()
-
-
-
-Typical use
-
-Medium or large organizations.
-
-10+ microservices using the same CI/CD rules.
-
-Governance and consistency.
-
-
-
-Parallel Branch/Module Analysis
-
-Purpose: Large monorepos or modular systems.
-
-Flow
-
-Jenkins runs multiple SonarQube analyses in parallel (per module or component).
-
-Aggregates results in SonarQube dashboard.
-
-
-Typical use
+**Typical use**
 
 Repos containing frontend + backend or multiple services.

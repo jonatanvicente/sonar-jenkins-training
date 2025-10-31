@@ -1,0 +1,8 @@
+parallel {
+  stage('Backend Analysis') {
+    steps { sh 'mvn sonar:sonar -Dsonar.projectKey=backend' }
+  }
+  stage('Frontend Analysis') {
+    steps { sh 'npm run sonar' }
+  }
+}
