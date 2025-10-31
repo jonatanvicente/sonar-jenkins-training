@@ -3,7 +3,7 @@
 # Jenkins Quiz (Jobs, Triggers, Builds, Scripting)
 
 ## Question 1
-Which of the following are types of Jenkins jobs?  
+Which of the following are types of Jenkins jobs?**  
 a) Freestyle project  
 b) Maven project  
 c) Python script project  
@@ -19,7 +19,7 @@ a, b, d
 ---
 
 ## Question 2
-Which of the following are valid triggers for Jenkins jobs?  
+**Which of the following are valid triggers for Jenkins jobs?**  
 a) Poll SCM  
 b) Schedule builds using cron syntax  
 c) Clicking “Build Now” manually  
@@ -35,7 +35,7 @@ a, b, c
 ---
 
 ## Question 3
-Which statements about Jenkins builds are correct?  
+**Which statements about Jenkins builds are correct?**  
 a) A build can compile code and run tests.  
 b) Builds are always triggered manually.  
 c) Each build has a unique build number.  
@@ -51,7 +51,7 @@ a, c
 ---
 
 ## Question 4
-Which scripting languages can be used in Jenkins pipelines?  
+**Which scripting languages can be used in Jenkins pipelines?**  
 a) Groovy  
 b) Bash/Shell  
 c) JavaScript  
@@ -67,7 +67,7 @@ a, b
 ---
 
 ## Question 5
-Which of the following statements about scripting in Jenkins are true?  
+**Which of the following statements about scripting in Jenkins are true?**  
 a) Jenkins supports scripted pipelines using Groovy.  
 b) Jenkinsfiles can contain conditional logic.  
 c) You cannot use loops or variables in pipelines.  

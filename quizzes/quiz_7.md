@@ -1,14 +1,10 @@
 
 
 
-
-
-
-
-# Jenkins Pipelines Quiz (Easy Level)
+# Jenkins Pipelines Quiz 
 
 ## Question 1
-Which of the following are benefits of using Jenkins for Continuous Delivery?  
+**Which of the following are benefits of using Jenkins for Continuous Delivery?**  
 a) Jenkins can automatically deploy applications.  
 b) Jenkins replaces the need for version control systems.  
 c) Jenkins can run automated tests as part of the pipeline.  
@@ -24,7 +20,7 @@ a, c
 ---
 
 ## Question 2
-Which statements about the Jenkins Pipeline plugin are correct?  
+**Which statements about the Jenkins Pipeline plugin are correct?**  
 a) It allows you to define build pipelines as code.  
 b) It is required to run any Jenkins job.  
 c) It supports both declarative and scripted pipeline syntax.  
@@ -40,7 +36,7 @@ a, c, d
 ---
 
 ## Question 3
-Which files and configurations are commonly used to define a Jenkins pipeline?  
+**Which files and configurations are commonly used to define a Jenkins pipeline?**  
 a) `Jenkinsfile`  
 b) `pipeline.yaml`  
 c) Inline pipeline configuration in the Jenkins job UI  
@@ -56,7 +52,7 @@ a, c
 ---
 
 ## Question 4
-Which statements about Declarative Pipelines are true?  
+**Which statements about Declarative Pipelines are true?**  
 a) They use a structured, easy-to-read syntax.  
 b) They do not allow conditional execution of stages.  
 c) They start with the `pipeline` block.  
@@ -72,7 +68,7 @@ a, c, d
 ---
 
 ## Question 5
-Which of the following can be defined as stages in a Jenkins pipeline?  
+**Which of the following can be defined as stages in a Jenkins pipeline?**  
 a) Build  
 b) Test  
 c) Deploy  
