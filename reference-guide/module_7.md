@@ -7,7 +7,7 @@ References:
 
 
 
-### How to configure coverage percentage in Jenkins and SonarQube
+### Configuring the Coverage Percentage Using Jenkins and SonarQube
 
 | Approach                      | Enforced in | Controls                    | Best for                      | Notes                |
 | ----------------------------- | ----------- | --------------------------- | ----------------------------- | -------------------- |
@@ -25,9 +25,9 @@ Use Jenkins’ native or plugin-based test result analysis to check JUnit result
 
 🔸 **Tools/Plugins**
 
-	- JUnit plugin (junit step)
-	- Quality Gates plugin
-	- Conditional pipeline logic (using Groovy)
+- JUnit plugin (junit step)
+- Quality Gates plugin
+- Conditional pipeline logic (using Groovy)
 
 
 ✅ **Pros**
@@ -99,8 +99,8 @@ Then, in Jenkins, wait for the quality gate result and fail the pipeline if it d
 
 🔸 **Required plugins**
 
-	- SonarQube Scanner for Jenkins
-	- “Wait for Quality Gate” step
+- SonarQube Scanner for Jenkins
+- “Wait for Quality Gate” step
 
 
 ✅ **Pros**
