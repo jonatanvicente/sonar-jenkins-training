@@ -1,5 +1,5 @@
 
-Follow next steps:
+
 
 ## Executing a Multibranch Project
 
@@ -33,7 +33,7 @@ Follow next steps:
  when { expression { !(env.BRANCH_NAME ==~ /feature\/.*/) } } // skip tests for `feature/*`
 ```
 
-    - **Test it by skipping any step when the develop branch is executing**
+- **Test it by skipping any step when the develop branch is executing**
 
 ### Classic View
 - Switch to the Classic View by clicking the button at the top right.
@@ -42,7 +42,7 @@ Follow next steps:
 - On the left bottom, click the build number to see the console output.
 
 
-## Sonarqube
+### Sonarqube
 
 - Create new Project
 - Link it to the new pipeline execution (multiproject setup).
