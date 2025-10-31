@@ -3,7 +3,7 @@
 # Jenkins & Testing Quiz
 
 ## Question 1
-**Which of the following correctly describe the purpose of different types of testing?**
+**Which of the following correctly describe the purpose of different types of testing?**  
 a) Unit tests verify individual components in isolation  
 b) Integration tests validate the interaction between multiple components  
 c) Regression tests ensure that new changes do not break existing functionality  
@@ -67,7 +67,7 @@ a, b, c
 ---
 
 ## Question 5
-**Which statements about JUnit and Cucumber are correct?** 
+**Which statements about JUnit and Cucumber are correct?**   
 a) JUnit is primarily used for unit testing in Java applications  
 b) Cucumber supports writing tests in a Gherkin language that is readable by non-technical stakeholders  
 c) Cucumber can be used to automate end-to-end testing scenarios  
