@@ -25,11 +25,11 @@
 1. Developer commits/pushes to the main branch.
 2. Git webhook triggers Jenkins.
 3. Jenkins:
-  - Pulls latest code.
-  - Builds and runs tests.
-  - Runs SonarQube analysis.
-  - Waits for Quality Gate.
-  - Publishes report or artifact.
+    - Pulls latest code.
+    - Builds and runs tests.
+    - Runs SonarQube analysis.
+    - Waits for Quality Gate.
+    - Publishes report or artifact.
 
 **Typical use**
 
@@ -48,9 +48,9 @@
 1. Developer creates feature branch → opens Pull Request (PR).
 2. Git provider webhook triggers Jenkins.
 3. Jenkins runs:
-  - Build + unit tests.
-  - SonarQube scan with PR decoration (comments in PR).
-  - Reports results to SonarQube and optionally GitHub/GitLab.
+    - Build + unit tests.
+    - SonarQube scan with PR decoration (comments in PR).
+    - Reports results to SonarQube and optionally GitHub/GitLab.
 
 **Typical use**
 
