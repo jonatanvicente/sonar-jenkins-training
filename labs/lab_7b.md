@@ -128,7 +128,7 @@
 
 ---
 
-**_6.Parallel Branch/Module Analysis_**
+**_6. Parallel Branch/Module Analysis_**
 
 **Purpose**: Large monorepos or modular systems.
 - **See Jenkinsfile-samples/Jenkinsfile-6**
