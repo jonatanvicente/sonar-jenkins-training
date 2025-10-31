@@ -28,8 +28,8 @@
 3. Jenkins:
     - Pulls latest code.
     - Builds and runs tests.
-    - Runs SonarQube analysis.
-    - Waits for Quality Gate.
+    - Runs **SonarQube analysis**.
+    - Waits for **Quality Gate**.
     - Publishes report or artifact.
 
 **Typical use**
@@ -42,7 +42,7 @@
 
 **_2. Feature Branch / Pull Request Validation Pipeline_**
 
-- **Purpose**: Validate code quality before merging into main.
+- **Purpose**: Validate code quality **before merging** into main.
 - **See Jenkinsfile-samples/Jenkinsfile-2**
 
 **Flow**
@@ -51,12 +51,12 @@
 2. Git provider webhook triggers Jenkins.
 3. Jenkins runs:
     - Build + unit tests.
-    - SonarQube scan with PR decoration (comments in PR).
+    - SonarQube scan with **PR decoration** (comments in PR).
     - Reports results to SonarQube and optionally GitHub/GitLab.
 
 **Typical use**
 
-- Teams using GitFlow or feature-branch models.
+- Teams using **GitFlow or feature-branch** models.
 - Enforce code quality before merging PRs.
 - Faster feedback for developers.
 
@@ -68,7 +68,7 @@
 
 **Flow**
 
-- Jenkins multibranch pipeline scans a Git repository.
+- Jenkins **multibranch pipeline** scans a Git repository.
 - Each branch automatically gets a pipeline.
 - SonarQube analysis runs per branch (SonarQube Developer Edition or higher required).
 
@@ -102,7 +102,7 @@
 **Typical use**
 
 - Continuous Delivery setups.
-- Projects enforcing quality gates as blockers before deployment.
+- Projects enforcing **quality gates as blockers** before deployment.
 
 ---
 
@@ -115,10 +115,10 @@
 
 - Each repo contains a minimal Jenkinsfile.
 - Shared Jenkins library defines standardized stages:
-    - build()
-    - test()
-    - sonarAnalyze()
-    - deploy()
+    - _build()_
+    - _test()_
+    - _sonarAnalyze()_
+    - _deploy()_
 
 **Typical use**
 
