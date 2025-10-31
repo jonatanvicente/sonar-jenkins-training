@@ -60,6 +60,7 @@
 - Enforce code quality before merging PRs.
 - Faster feedback for developers.
 
+---
 
 **_3. Multi-Branch Pipeline (Automated per Branch)_**
 
@@ -82,6 +83,8 @@
 - Repositories with many feature branches.
 - Organizations wanting fully automated CI per branch.
 
+---
+
 
 **_4. Pipeline with Staged Quality Gates (CI + CD)_**
 
@@ -101,7 +104,7 @@
 - Continuous Delivery setups.
 - Projects enforcing quality gates as blockers before deployment.
 
-
+---
 
 **_5. Microservices Architecture (Shared Libraries)_**
 
@@ -123,6 +126,7 @@
 - 10+ microservices using the same CI/CD rules.
 - Governance and consistency.
 
+---
 
 **_6.Parallel Branch/Module Analysis_**
 
