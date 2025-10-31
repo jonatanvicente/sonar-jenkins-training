@@ -30,8 +30,17 @@ Use Jenkins’ native or plugin-based test result analysis to check JUnit result
 	- Conditional pipeline logic (using Groovy)
 
 
+✅ **Pros**
+
+- Immediate feedback (no need to wait for SonarQube).
+- Fully local — works even without Sonar.
+
+❌ **Cons**
+
+- Limited to raw test results (coverage and complexity come only from Sonar).
+
 <details>
-  <summary>**Example**</summary>
+  <summary>Example</summary>
 
 ```
 pipeline {
@@ -76,15 +85,6 @@ pipeline {
 ```
 </details>
 
-✅ **Pros**
-
-- Immediate feedback (no need to wait for SonarQube).
-- Fully local — works even without Sonar.
-
-❌ **Cons**
-
-- Limited to raw test results (coverage and complexity come only from Sonar).
-
 
 ## 2.- Validation inside SonarQube (quality gate enforcement)
 
@@ -102,7 +102,20 @@ Then, in Jenkins, wait for the quality gate result and fail the pipeline if it d
 	- SonarQube Scanner for Jenkins
 	- “Wait for Quality Gate” step
 
-#### Example
+
+✅ **Pros**
+
+- Centralized management via SonarQube’s UI (no Groovy logic).
+- Enforces coverage and many other quality metrics.
+- Integrates well for enterprise setups.
+
+❌ **Cons**
+
+- Requires SonarQube to have executed and reported results first.
+- Slightly more delay in feedback.
+
+<details>
+  <summary>Example</summary>
 
 ```
 pipeline {
@@ -140,17 +153,8 @@ pipeline {
 }
 
 ```
+</details>
 
-✅ **Pros**
-
-- Centralized management via SonarQube’s UI (no Groovy logic).
-- Enforces coverage and many other quality metrics.
-- Integrates well for enterprise setups.
-
-❌ **Cons**
-
-- Requires SonarQube to have executed and reported results first.
-- Slightly more delay in feedback.
 
 ## 3.- Hybrid approach (Jenkins + SonarQube)
 
@@ -161,7 +165,14 @@ You can combine both:
 2. Run SonarQube analysis and enforce coverage and code quality via quality gate.
 
 
-#### Example
+
+✅ **Pros**
+
+- Early fail (fast feedback from test stage).
+- Strong governance (Sonar rules for code coverage and quality gate).
+
+<details>
+  <summary>Example</summary>
 
 ```
 stage('Check Tests') {
@@ -192,10 +203,7 @@ stage('Quality Gate') {
   }
 }
 ```
-✅ **Pros**
-
-- Early fail (fast feedback from test stage).
-- Strong governance (Sonar rules for code coverage and quality gate).
+</details>
 
 
 ## 4.- Optional — enforce via Maven profiles (lightweight)
@@ -203,7 +211,8 @@ stage('Quality Gate') {
 If you use Gradle and JaCoCo, you can add coverage thresholds directly in your build.gradle:
 
 
-#### Example
+<details>
+  <summary>Example</summary>
 
 ```
 
@@ -245,4 +254,6 @@ sonar {
 
 
 ```
+</details>
+
 If coverage is below 70% (0.7), Maven will fail the build before Jenkins continues.
