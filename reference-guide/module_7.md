@@ -19,16 +19,19 @@ References:
 
 ### 1.-Validation inside Jenkins (test results analysis)
 
-🔸 Mechanism
+🔸 **Mechanism**
 
 Use Jenkins’ native or plugin-based test result analysis to check JUnit results and enforce a minimum pass rate before moving to SonarQube or deployment.
 
-🔸 Tools/Plugins
+🔸 **Tools/Plugins**
+
 	- JUnit plugin (junit step)
 	- Quality Gates plugin
 	- Conditional pipeline logic (using Groovy)
 
-#### Example
+
+<details>
+  <summary>**Example**</summary>
 
 ```
 pipeline {
@@ -71,20 +74,21 @@ pipeline {
 }
 
 ```
+</details>
 
-✅ Pros
+✅ **Pros**
 
 - Immediate feedback (no need to wait for SonarQube).
 - Fully local — works even without Sonar.
 
-❌ Cons
+❌ **Cons**
 
 - Limited to raw test results (coverage and complexity come only from Sonar).
 
 
 ## 2.- Validation inside SonarQube (quality gate enforcement)
 
-🔸 Mechanism
+🔸 **Mechanism**
 
 Use SonarQube’s Quality Gates to define rules such as:
 - Minimum test coverage (coverage >= 80%)
@@ -93,7 +97,8 @@ Use SonarQube’s Quality Gates to define rules such as:
 
 Then, in Jenkins, wait for the quality gate result and fail the pipeline if it doesn’t pass.
 
-🔸 Required plugins
+🔸 **Required plugins**
+
 	- SonarQube Scanner for Jenkins
 	- “Wait for Quality Gate” step
 
@@ -136,20 +141,20 @@ pipeline {
 
 ```
 
-✅ Pros
+✅ **Pros**
 
 - Centralized management via SonarQube’s UI (no Groovy logic).
 - Enforces coverage and many other quality metrics.
 - Integrates well for enterprise setups.
 
-❌ Cons
+❌ **Cons**
 
 - Requires SonarQube to have executed and reported results first.
 - Slightly more delay in feedback.
 
 ## 3.- Hybrid approach (Jenkins + SonarQube)
 
-🔸 Mechanism
+🔸 **Mechanism**
 
 You can combine both:
 1. Check test pass rate locally (fast fail).
@@ -187,7 +192,7 @@ stage('Quality Gate') {
   }
 }
 ```
-✅ Pros
+✅ **Pros**
 
 - Early fail (fast feedback from test stage).
 - Strong governance (Sonar rules for code coverage and quality gate).
