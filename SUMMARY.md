@@ -46,3 +46,11 @@
 	- **Testing Essentials**
 		- [**Lab 8**. JUnit Testing](labs/lab_8.md)
 		- [**Quiz 8**](quizzes/quiz_8.md)		
+	- **Katalon Platform**
+		- [**Lab 9**. Katalon Platform](labs/lab_9.md)
+		- [**Quiz 9**](quizzes/quiz_9.md)
+	- **Selenium Platform**
+		- [**Lab 10**. JUnit Testing](labs/lab_10.md)
+		- [**Quiz 10**](quizzes/quiz_10.md)		
+
+		
