@@ -43,3 +43,4 @@
 		- [**Lab 7a**. Jenkins Pipeline](labs/lab_7a.md)
 		- [**Lab 7b**. Jenkins Scenarios](labs/lab_7b.md)
 		- [**Quiz 7**](quizzes/quiz_7.md)		
+	- **Testing Essentials**
