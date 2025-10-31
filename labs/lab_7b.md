@@ -13,6 +13,7 @@
 | **6. Parallel Module Analysis**    | Parallel pipeline    | Monorepo                   | Multiple project keys | Complex systems          |
 
 
+### Scenarios
 
 **_1. Basic CI Pipeline (Main Branch Only)_**
 
@@ -37,6 +38,7 @@
 - First CI/CD iteration.
 - Ensures minimum code quality before merging.
 
+---
 
 **_2. Feature Branch / Pull Request Validation Pipeline_**
 
