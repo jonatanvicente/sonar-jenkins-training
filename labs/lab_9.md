@@ -34,7 +34,7 @@
 ```
 </details>
 
-	- Save it locally (e.g., C:\KatalonExercises\login.html).
+- Save it locally (e.g., C:\KatalonExercises\login.html).
 
 2. Create Katalon Project
 	- File → New → Project → Name: LocalWebLoginTest.
