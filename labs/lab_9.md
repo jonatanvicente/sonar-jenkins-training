@@ -4,7 +4,7 @@
 
 **Objective**: Automate a login flow on a local HTML page.
 
-Steps:
+**Steps:**
 1. Prepare Local HTML
 2. Create a simple HTML file login.html:
 
@@ -60,9 +60,12 @@ Steps:
 
 **Objective**: Test a simple local JSON file as a “mock API” without external calls.
 
+**Steps:**
+
 1. Create a Local JSON File
 
-- user.json:
+<details>
+  <summary>user.json</summary>
 
 
 ```
@@ -73,13 +76,16 @@ Steps:
 }
 
 ```
+</details>
 
-	- Save in your project folder.
+- Save in your project folder.
 
 2. Create Test Case
 	- File → New → Test Case → Name: TC_LocalJSONTest.
 	- Open Script view, add Groovy code:
 
+<details>
+  <summary>TC_LocalJSONTest (Groovy code)</summary>
 
 ```
 import groovy.json.JsonSlurper
@@ -92,6 +98,8 @@ println "Local JSON test passed!"
 
 ```
 
+</details>
+
 3. Run Test
 	- Toolbar → Run → Console
 	- Verify it prints: "Local JSON test passed!".
@@ -101,10 +109,15 @@ println "Local JSON test passed!"
 
 **Objective**: Test multiple username/password combinations locally.
 
+**Steps:**
+
 1. Create Excel File
 	- Name: LoginData.xlsx
 	- Columns: username, password
 	- Rows:
+
+<details>
+  <summary>Rows</summary>
 
 ```
 user, pass
@@ -112,8 +125,10 @@ test, 123
 admin, admin
 
 ```
+</details>
 
-	- Save in project folder.
+
+- Save in project folder.
 
 2. Add Test Data
 	 - File → New → Test Data → Name: LocalLoginData
