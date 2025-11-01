@@ -36,24 +36,26 @@
 
 - Save it locally (e.g., C:\KatalonExercises\login.html).
 
-2. Create Katalon Project
+3. Create Katalon Project
 	- File → New → Project → Name: LocalWebLoginTest.
-3. Create Test Case
+4. Create Test Case
 	- File → New → Test Case → Name: TC_LocalLogin.
 	- Open in Manual view.
-4. Record / Add Steps
+5. Record / Add Steps
 	- Record Web → enter local file URL: file:///C:/KatalonExercises/login.html.
 	- Perform:
 		- Enter username user → input field with id username.
 		- Enter password pass → input field with id password.
 		- Click Login button (loginBtn).
 
-5. Verify Result
+6. Verify Result
 	- Add step: Verify Element Visible → element welcomeMsg.
 
-6. Run Test
+7. Run Test
 	- Toolbar → Run → Chrome/Firefox
 	- Test should pass showing “Welcome!”.
+
+---
 
 
 ### Exercise 2: Local API Simulation (JSON Request/Response)
@@ -103,6 +105,9 @@ println "Local JSON test passed!"
 3. Run Test
 	- Toolbar → Run → Console
 	- Verify it prints: "Local JSON test passed!".
+
+
+---
 
 
 ### Exercise 3: Data-Driven Local Test (Excel)
