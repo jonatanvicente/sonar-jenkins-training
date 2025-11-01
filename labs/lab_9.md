@@ -8,6 +8,9 @@ Steps:
 1. Prepare Local HTML
 2. Create a simple HTML file login.html:
 
+<details>
+  <summary>login.html</summary>
+
 ```
 <html>
   <body>
@@ -29,6 +32,7 @@ Steps:
 </html>
 
 ```
+</details>
 
 - Save it locally (e.g., C:\KatalonExercises\login.html).
 
@@ -130,4 +134,3 @@ admin, admin
 	- Katalon executes each row in Excel locally.
 
 
-	
