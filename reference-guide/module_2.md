@@ -7,6 +7,7 @@ References:
 		- [Intelli J](https://docs.sonarsource.com/sonarqube-for-intellij)
 		- [Visual Studio](https://docs.sonarsource.com/sonarqube-for-visual-studio)
 		- [Eclipse](https://docs.sonarsource.com/sonarqube-for-eclipse)
+- [Sonarqube Rules](https://rules.sonarsource.com)
 - [Sonarqube Measures and Metrics](https://docs.sonarsource.com/sonarqube-server/user-guide/code-metrics/metrics-definition)
 
 
