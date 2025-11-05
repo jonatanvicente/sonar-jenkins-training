@@ -2,6 +2,7 @@
 ## 🧩 Open a Web Page and Verify Its Title
 
 **Goal:** Get familiar with basic navigation and assertions.
+
 **Difficulty:** 🟢 Easy
 
 **Steps:**
