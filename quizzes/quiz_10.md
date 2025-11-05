@@ -6,11 +6,8 @@
 **What is Selenium primarily used for?**
 
 a) Unit testing Java applications
-
 b) Automating web browsers
-
 c) Designing databases
-
 d) Monitoring server performance
 
 <details>
