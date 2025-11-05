@@ -1,5 +1,10 @@
 
 
+### Prerrequisites
+
+- Access to Katalon TestOps at https://testops.katalon.io and create your account  
+- Download and install [Katalon Studio](https://katalon.com/katalon-studio?)  
+
 ### Exercise 1: Web Login Test (Basic Test Case)
 
 **Objective**: Automate a login flow on a local HTML page.
