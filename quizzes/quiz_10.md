@@ -12,7 +12,7 @@ d) Monitoring server performance
 <details>
   <summary>Solution</summary>
 
-- b
+b
 
 </details>
 
@@ -28,7 +28,7 @@ d) Selenium RC
 <details>
   <summary>Solution</summary>
 
-- c
+c
 
 </details>
 
@@ -44,7 +44,7 @@ d) `driver.navigateTo()`
 <details>
   <summary>Solution</summary>
 
-- c
+c
 
 </details>
 
@@ -60,7 +60,7 @@ d) Tag Name
 <details>
   <summary>Solution</summary>
 
-- b
+b
 
 </details>
 
@@ -76,7 +76,7 @@ d) Automatically take screenshots
 <details>
   <summary>Solution</summary>
 
-- b
+b
 
 </details>
 
@@ -92,7 +92,7 @@ d) `element.submit()`
 <details>
   <summary>Solution</summary>
 
-- a
+a
 
 </details>
 
@@ -108,7 +108,7 @@ d) Headless mode only works with Firefox
 <details>
   <summary>Solution</summary>
 
-- b
+b
 
 </details>
 
@@ -124,7 +124,7 @@ d) Generating test reports automatically
 <details>
   <summary>Solution</summary>
 
-- b
+b
 
 </details>
 
