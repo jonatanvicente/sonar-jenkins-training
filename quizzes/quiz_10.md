@@ -1,6 +1,6 @@
 
-### 1. What is Selenium primarily used for?
 
+**1. What is Selenium primarily used for?**
 a) Unit testing Java applications
 b) Automating web browsers
 c) Designing databases
@@ -8,7 +8,9 @@ d) Monitoring server performance
 
 <details>
   <summary>Solution</summary>
+
 - b
+
 </details>
 
 ---
@@ -22,7 +24,9 @@ d) Selenium RC
 
 <details>
   <summary>Solution</summary>
+
 - c
+
 </details>
 
 ---
@@ -36,7 +40,9 @@ d) `driver.navigateTo()`
 
 <details>
   <summary>Solution</summary>
+
 - c
+
 </details>
 
 ---
@@ -50,7 +56,9 @@ d) Tag Name
 
 <details>
   <summary>Solution</summary>
+
 - b
+
 </details>
 
 ---
@@ -64,7 +72,9 @@ d) Automatically take screenshots
 
 <details>
   <summary>Solution</summary>
+
 - b
+
 </details>
 
 ---
@@ -78,7 +88,9 @@ d) `element.submit()`
 
 <details>
   <summary>Solution</summary>
+
 - a
+
 </details>
 
 ---
@@ -92,7 +104,9 @@ d) Headless mode only works with Firefox
 
 <details>
   <summary>Solution</summary>
+
 - b
+
 </details>
 
 ---
@@ -106,6 +120,8 @@ d) Generating test reports automatically
 
 <details>
   <summary>Solution</summary>
+
 - b
+
 </details>
 
