@@ -90,10 +90,10 @@ b
 ## Question 6
 **Which method is used to click a button using Selenium WebDriver?**
 
-a) `button.click()`
-b) `driver.press()`
-c) `driver.select()`
-d) `element.submit()`
+a) button.click()
+b) driver.press()
+c) driver.select()
+d) element.submit()
 
 <details>
   <summary>Solution</summary>
@@ -107,10 +107,10 @@ a
 ## Question 7
 **Which of these statements is true about running Selenium tests headlessly?**
 
-a) Headless mode requires opening the browser GUI
-b) Tests run in the background without opening the browser window
-c) Screenshots cannot be captured in headless mode
-d) Headless mode only works with Firefox
+a. Headless mode requires opening the browser GUI
+b. Tests run in the background without opening the browser window
+c. Screenshots cannot be captured in headless mode
+d. Headless mode only works with Firefox
 
 <details>
   <summary>Solution</summary>

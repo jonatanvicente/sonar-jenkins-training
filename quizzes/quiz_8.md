@@ -4,10 +4,10 @@
 
 ## Question 1
 **Which of the following correctly describe the purpose of different types of testing?**  
-a. Unit tests verify individual components in isolation  
-b. Integration tests validate the interaction between multiple components  
-c. Regression tests ensure that new changes do not break existing functionality  
-d. Smoke tests require full system deployment and real user data
+a) Unit tests verify individual components in isolation  
+b) Integration tests validate the interaction between multiple components  
+c) Regression tests ensure that new changes do not break existing functionality  
+d) Smoke tests require full system deployment and real user data
 
 <details>
   <summary>Solution</summary>
