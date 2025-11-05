@@ -4,6 +4,7 @@
 
 ## Question 1
 **What is Selenium primarily used for?**
+
 a) Unit testing Java applications
 b) Automating web browsers
 c) Designing databases
@@ -20,6 +21,7 @@ b
 
 ## Question 2
 **Which Selenium component allows you to record and playback tests in a browser?**
+
 a) Selenium WebDriver
 b) Selenium Grid
 c) Selenium IDE
@@ -36,6 +38,7 @@ c
 
 ## Question 3
 **Which method is used in Selenium WebDriver to open a webpage?**
+
 a) `driver.start()`
 b) `driver.openUrl()`
 c) `driver.get()`
@@ -52,6 +55,7 @@ c
 
 ## Question 4
 **Which locator strategy is considered fastest and most reliable in Selenium?**
+
 a) XPath
 b) CSS Selector
 c) Link Text
@@ -68,6 +72,7 @@ b
 
 ## Question 5
 **What is the purpose of `WebDriverWait` in Selenium?**
+
 a) Pause the program for a fixed time
 b) Wait until a condition is met before proceeding
 c) Speed up the execution of tests
@@ -84,6 +89,7 @@ b
 
 ## Question 6
 **Which method is used to click a button using Selenium WebDriver?**
+
 a) `button.click()`
 b) `driver.press()`
 c) `driver.select()`
@@ -100,6 +106,7 @@ a
 
 ## Question 7
 **Which of these statements is true about running Selenium tests headlessly?**
+
 a) Headless mode requires opening the browser GUI
 b) Tests run in the background without opening the browser window
 c) Screenshots cannot be captured in headless mode
@@ -116,6 +123,7 @@ b
 
 ## Question 8
 **What is Selenium Grid mainly used for?**
+
 a) Writing unit tests for Java code
 b) Running tests on multiple machines and browsers in parallel
 c) Recording test scripts
