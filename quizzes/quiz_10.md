@@ -4,10 +4,12 @@
 
 ## Question 1
 **What is Selenium primarily used for?**
-
 a) Unit testing Java applications
+
 b) Automating web browsers
+
 c) Designing databases
+
 d) Monitoring server performance
 
 <details>
@@ -39,10 +41,10 @@ c
 ## Question 3
 **Which method is used in Selenium WebDriver to open a webpage?**
 
-a) driver.start()
-b) driver.openUrl()
-c) driver.get()
-d) driver.navigateTo()
+a) `driver.start()`
+b) `driver.openUrl()`
+c) `driver.get()`
+d) `driver.navigateTo()`
 
 <details>
   <summary>Solution</summary>
@@ -71,7 +73,7 @@ b
 ---
 
 ## Question 5
-**What is the purpose of WebDriverWait in Selenium?**
+**What is the purpose of `WebDriverWait` in Selenium?**
 
 a) Pause the program for a fixed time
 b) Wait until a condition is met before proceeding
@@ -107,10 +109,10 @@ a
 ## Question 7
 **Which of these statements is true about running Selenium tests headlessly?**
 
-a. Headless mode requires opening the browser GUI
-b. Tests run in the background without opening the browser window
-c. Screenshots cannot be captured in headless mode
-d. Headless mode only works with Firefox
+a) Headless mode requires opening the browser GUI
+b) Tests run in the background without opening the browser window
+c) Screenshots cannot be captured in headless mode
+d) Headless mode only works with Firefox
 
 <details>
   <summary>Solution</summary>
