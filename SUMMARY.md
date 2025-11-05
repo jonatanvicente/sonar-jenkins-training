@@ -50,7 +50,7 @@
 		- [**Lab 9**. Katalon Platform](labs/lab_9.md)
 		- [**Quiz 9**](quizzes/quiz_9.md)
 	- **Selenium Platform**
-		- [**Lab 10**. JUnit Testing](labs/lab_10.md)
+		- [**Lab 10**. Selenium Platform](labs/lab_10.md)
 		- [**Quiz 10**](quizzes/quiz_10.md)		
 
 		
