@@ -1,7 +1,7 @@
 
 ## 🧩 Open a Web Page and Verify Its Title
 
-**Goal:** Get familiar with basic navigation and assertions.
+**Goal:** Get familiar with basic navigation and assertions
 
 **Difficulty:** 🟢 Easy
 
@@ -22,7 +22,8 @@
 
 ## 🧩 Locate Elements and Interact with Them
 
-**Goal:** Practice finding elements using different locators.
+**Goal:** Practice finding elements using different locators
+
 **Difficulty:** 🟢 Easy
 
 **Scenario:** Use the [Google homepage](https://www.google.com).
@@ -45,7 +46,8 @@
 
 ## 🧩 Automate a Simple Form
 
-**Goal:** Understand form automation and assertions.
+**Goal:** Understand form automation and assertions
+
 **Difficulty:** 🟡 Moderate
 
 **Scenario:** Use [https://www.selenium.dev/selenium/web/web-form.html](https://www.selenium.dev/selenium/web/web-form.html).
@@ -68,7 +70,8 @@
 
 ## 🧩 Handle Dynamic Content (Optional)
 
-**Goal:** Use waits with dynamically loaded elements.
+**Goal:** Use waits with dynamically loaded elements
+
 **Difficulty:** 🟡 Moderate
 
 **Scenario:** Use [https://the-internet.herokuapp.com/dynamic_loading/2](https://the-internet.herokuapp.com/dynamic_loading/2).
@@ -88,7 +91,8 @@
 
 ## 🧩 Screenshot on Test Failure
 
-**Goal:** Combine Selenium actions with test framework capabilities.
+**Goal:** Combine Selenium actions with test framework capabilities
+
 **Difficulty:** 🟡 Moderate
 
 **Steps:**
