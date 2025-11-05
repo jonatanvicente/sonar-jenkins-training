@@ -64,7 +64,7 @@ sonarqube {
 
 7. **Jenkins: Add the SonarQube task to your pipeline**
 - In your **Job Configuration**:
-	- Under **Build Environment**, enable Use secret text(s) or file(s) and set:
+	- Under **Environment**, enable Use secret text(s) or file(s) and set:
 		- **Variable:** SONAR_TOKEN
 		- **Credentials:** SonarQube token for CI (created in step 3)
 		- Under **Build Steps**, add a new step called Invoke Gradle Script, and configure:
