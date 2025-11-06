@@ -1,0 +1,18 @@
+pipeline {
+  agent any
+
+  stages {
+    stage('Test') {
+      steps {
+        sh './gradlew clean test --no-daemon --no-build-cache --rerun-tasks'
+      }
+    }
+  }
+
+  post {
+    always {
+      junit '**/build/test-results/test/*.xml'
+      archiveArtifacts artifacts: '**/build/libs/*.jar', allowEmptyArchive: true
+    }
+  }
+}

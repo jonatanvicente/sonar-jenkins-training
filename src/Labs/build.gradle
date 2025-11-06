@@ -17,6 +17,10 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+test{
+    useJUnitPlatform()
+}
+
 /*
 jacoco{
     toolVersion = '0.8.11'
@@ -59,6 +63,6 @@ sonar {
         property "sonar.projectKey", "sonar-jenkins-training"
         property "sonar.projectName", "sonar-jenkins-training"
         property "sonar.host.url", "http://sonarqube:9000"
-        property "sonar.token", "squ_fe5fa50fc8f0b838e3ce2fe42bbd7e117ac556dc"
+        //property "sonar.token", "squ_fe5fa50fc8f0b838e3ce2fe42bbd7e117ac556dc"
     }
 }
