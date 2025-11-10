@@ -1,3 +1,4 @@
 rootProject.name = 'Labs'
 include 'Lab_4'
 include 'Lab_5'
+include 'Lab_10'
