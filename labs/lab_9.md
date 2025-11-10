@@ -47,7 +47,7 @@
 	- File → New → Test Case → Name: TC_LocalLogin.
 	- Open in Manual view.
 5. Record / Add Steps
-	- Record Web → enter local file URL: file:///C:/KatalonExercises/login.html.
+	- Action → Record → Record Web → enter local file URL: file:///C:/KatalonExercises/login.html.
 	- Perform:
 		- Enter username user → input field with id username.
 		- Enter password pass → input field with id password.
