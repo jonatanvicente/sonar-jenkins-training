@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id "org.sonarqube" version "6.3.1.5724"
+//    id 'jacoco'
 }
 
 group = 'org.sonar-jenkins-training'
@@ -16,11 +17,48 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
-test {
+test{
     useJUnitPlatform()
 }
 
-sonarqube {
+/*
+jacoco{
+    toolVersion = '0.8.11'
+    reportsDirectory = layout.buildDirectory.dir('jacocoXml')
+}
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+    jvmArgs "-Xshare:off"
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required = true
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+
+// JaCoCo configuration: https://docs.gradle.org/current/userguide/jacoco_plugin.html
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 0.7
+            }
+        }
+    }
+}
+*/
+sonar {
     properties {
         property "sonar.projectKey", "sonar-jenkins-training"
         property "sonar.projectName", "sonar-jenkins-training"

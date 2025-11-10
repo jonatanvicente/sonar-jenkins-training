@@ -1,5 +1,10 @@
 
 
+### Prerrequisites
+
+- Access to Katalon TestOps at https://testops.katalon.io and create your account  
+- Download and install [Katalon Studio](https://katalon.com/katalon-studio?)  
+
 ### Exercise 1: Web Login Test (Basic Test Case)
 
 **Objective**: Automate a login flow on a local HTML page.
@@ -42,7 +47,7 @@
 	- File → New → Test Case → Name: TC_LocalLogin.
 	- Open in Manual view.
 5. Record / Add Steps
-	- Record Web → enter local file URL: file:///C:/KatalonExercises/login.html.
+	- Action → Record → Record Web → enter local file URL: file:///C:/KatalonExercises/login.html.
 	- Perform:
 		- Enter username user → input field with id username.
 		- Enter password pass → input field with id password.
