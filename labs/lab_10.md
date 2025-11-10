@@ -110,6 +110,8 @@
 
 ## 🧩 Exercise 6: Handle a JavaScript Alert
 
+**Difficulty:** 🟡 Moderate
+
 1. Open the page: https://the-internet.herokuapp.com/javascript_alerts
 2. Click the button labeled “Click for JS Alert”.
 3. Switch to the alert, accept it, and verify that the result text says “You successfully clicked an alert”.
@@ -117,6 +119,8 @@
 ---
 
 ## 🧩 Exercise 7: Interact with an IFrame
+
+**Difficulty:** 🟡 Moderate
 
 1. Open the page: https://the-internet.herokuapp.com/iframe
 2. Switch to the iframe containing the TinyMCE editor.
