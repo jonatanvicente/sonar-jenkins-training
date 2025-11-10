@@ -106,4 +106,20 @@
 * `TakesScreenshot`
 * Integration with JUnit/TestNG hooks (`@After`, `@AfterMethod`)
 
+---
+
+## 🧩 Exercise 6: Handle a JavaScript Alert
+
+1. Open the page: https://the-internet.herokuapp.com/javascript_alerts
+2. Click the button labeled “Click for JS Alert”.
+3. Switch to the alert, accept it, and verify that the result text says “You successfully clicked an alert”.
+
+---
+
+## 🧩 Exercise 7: Interact with an IFrame
+
+1. Open the page: https://the-internet.herokuapp.com/iframe
+2. Switch to the iframe containing the TinyMCE editor.
+3. Clear the existing text and type: “Hello Selenium!”
+4. Switch back to the main page and verify that the heading above the editor contains “An iFrame containing the TinyMCE WYSIWYG Editor”.
 
